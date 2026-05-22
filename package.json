@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch",
+    "serve": "http-server . -p 4173 -c-1 -s",
     "prepare": "husky",
     "lint": "eslint",
     "format": "prettier --write .",
@@ -18,8 +19,12 @@
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.60.0",
     "eslint": "^10.3.0",
     "globals": "^17.6.0",
+    "http-server": "^14.1.1",
+    "husky": "^9.1.7",
+    "playwright": "^1.60.0",
     "prettier": "^3.8.3",
     "tailwindcss": "^3.4.12",
     "vitest": "^4.1.6"

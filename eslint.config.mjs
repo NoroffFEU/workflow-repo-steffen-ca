@@ -9,4 +9,9 @@ export default defineConfig([
     extends: ["js/recommended"],
     languageOptions: { globals: globals.browser },
   },
+  {
+    // Tooling and end-to-end tests run in Node, not the browser.
+    files: ["playwright.config.js", "eslint.config.mjs", "tests/**/*.js"],
+    languageOptions: { globals: globals.node },
+  },
 ]);
