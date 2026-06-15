@@ -24,6 +24,7 @@
     "globals": "^17.6.0",
     "http-server": "^14.1.1",
     "husky": "^9.1.7",
+    "jsdom": "^29.1.1",
     "playwright": "^1.60.0",
     "prettier": "^3.8.3",
     "tailwindcss": "^3.4.12",
@@ -37,8 +38,6 @@
     "*.{html,css,md}": "prettier --write"
   },
   "dependencies": {
-    "husky": "9.1.7",
-    "lint-staged": "^15.0.0",
     "acorn": "^8.16.0",
     "acorn-jsx": "^5.3.2",
     "ajv": "^6.15.0",
@@ -87,6 +86,7 @@
     "glob": "^10.4.5",
     "glob-parent": "^6.0.2",
     "hasown": "^2.0.2",
+    "husky": "9.1.7",
     "ignore": "^5.3.2",
     "imurmurhash": "^0.1.4",
     "is-binary-path": "^2.1.0",
@@ -105,6 +105,7 @@
     "levn": "^0.4.1",
     "lilconfig": "^2.1.0",
     "lines-and-columns": "^1.2.4",
+    "lint-staged": "^15.0.0",
     "locate-path": "^6.0.0",
     "lru-cache": "^10.4.3",
     "merge2": "^1.4.1",
