@@ -30,10 +30,15 @@
     "vitest": "^4.1.6"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    "*.js": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ],
+    "*.{html,css,md}": "prettier --write"
   },
   "dependencies": {
+    "husky": "9.1.7",
+    "lint-staged": "^15.0.0",
     "acorn": "^8.16.0",
     "acorn-jsx": "^5.3.2",
     "ajv": "^6.15.0",
@@ -168,6 +173,7 @@
     "type": "git",
     "url": "git+https://github.com/NoroffFEU/workflow-repo-steffen-ca.git"
   },
+  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/NoroffFEU/workflow-repo-steffen-ca/issues"
   },
